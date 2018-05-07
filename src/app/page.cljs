@@ -1,5 +1,5 @@
 
-(ns app.render
+(ns app.page
   (:require [respo.render.html :refer [make-string]]
             [shell-page.core :refer [make-page spit slurp]]
             [app.comp.container :refer [comp-container]]
@@ -9,18 +9,18 @@
 
 (def base-info
   {:title "Bookshops",
-   :icon "http://cdn.tiye.me/logo/tiye.jpg",
+   :icon "http://cdn.tiye.me/logo/webcity.png",
    :ssr nil,
-   :inline-html nil,
-   :inline-styles [(slurp "./entry/main.css")]})
+   :inline-html nil})
 
 (defn dev-page []
   (make-page
    ""
    (merge
     base-info
-    {:styles ["http://localhost:8100/main.css"],
-     :scripts ["/browser/lib.js" "/browser/main.js"]})))
+    {:styles ["/entry/main.css" "http://localhost:8100/main.css"],
+     :scripts ["/main.js"],
+     :inline-styles []})))
 
 (def preview? (= "preview" js/process.env.prod))
 
@@ -36,7 +36,8 @@
       base-info
       {:styles ["http://cdn.tiye.me/favored-fonts/main.css"],
        :scripts (map #(-> % :output-name prefix-cdn) assets),
-       :ssr "respo-ssr"}))))
+       :ssr "respo-ssr",
+       :inline-styles [(slurp "./entry/main.css")]}))))
 
 (defn main! []
   (if (= js/process.env.env "dev")

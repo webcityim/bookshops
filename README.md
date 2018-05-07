@@ -4,9 +4,11 @@ Collection of bookshops
 
 > Photos I took in bookshops
 
-### Workflow
+http://repo.tiye.me/webcityim/bookshops/
 
-Workflow https://github.com/mvc-works/coworkflow
+### Develop
+
+Workflow https://github.com/mvc-works/calcit-workflow
 
 ### License
 
