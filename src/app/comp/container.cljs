@@ -24,78 +24,87 @@
             [app.data :refer [bookshop-list]]
             [clojure.string :as string]))
 
+(defcomp comp-cell (content) (div {:style ui/flex} (<> content)))
+
 (defcomp
  comp-bookshop
  (bookshop)
  (div
   {:style (merge
            ui/row
-           {:width 400,
-            :background-color (hsl 0 0 100),
-            :border (str "1px solid " (hsl 0 0 90)),
-            :border-radius "8px",
-            :padding 8,
-            :margin 8})}
-  (div {:style {:width "50%", :font-size 24}} (<> (:name bookshop)))
-  (=< 8 nil)
-  (div
-   {:style ui/column}
-   (div
-    {:style ui/flex}
-    (<> (:city bookshop))
-    (=< 8 nil)
-    (<> (:station bookshop))
-    (=< 8 nil)
-    (<> (:place bookshop)))
-   (list->
-    {:style {:display :inline-block}}
-    (->> (:albums bookshop)
-         (map-indexed
-          (fn [idx2 album]
-            [idx2
-             (a
-              {:href (:link album),
-               :inner-text (str "相册(" (:title album) ")"),
-               :target "_blank"})])))))))
+           {:background-color (hsl 0 0 100),
+            :border-bottom (str "1px solid " (hsl 0 0 90)),
+            :padding 16})}
+  (comp-cell (:name bookshop))
+  (comp-cell (:city bookshop))
+  (comp-cell (:station bookshop))
+  (comp-cell (:place bookshop))
+  (list->
+   {:style (merge ui/flex {:display :inline-block})}
+   (->> (:albums bookshop)
+        (map-indexed
+         (fn [idx2 album]
+           [idx2
+            (a
+             {:href (:link album),
+              :inner-text (str "相册(" (:title album) ")"),
+              :target "_blank"})]))))))
+
+(defcomp
+ comp-entry
+ (search)
+ (div
+  {:style {:cursor :pointer, :font-size 16, :line-height 2},
+   :on-click (action-> :content search)}
+  (<> search)))
 
 (defcomp
  comp-container
  (reel)
  (let [store (:store reel), states (:states store), state (or (:data states) {:text ""})]
    (div
-    {:style (merge ui/global {:padding 16})}
+    {:style (merge ui/global ui/fullscreen {:padding 16})}
     (div
-     {:style ui/center}
-     (input
-      {:value (:text state),
-       :style (merge
-               ui/input
-               {:font-size 24,
-                :line-height "48px",
-                :height 48,
-                :width 400,
-                :padding "0 16px"}),
-       :placeholder "Hit Enter to search...",
-       :on-input (fn [e d! m!] (m! {:text (:value e)})),
-       :on-keydown (fn [e d! m!] (when (= (:keycode e) 13) (d! :content (:text state))))}))
-    (=< nil 16)
-    (let [visible-shops (->> bookshop-list
-                             (filter
-                              (fn [bookshop]
-                                (some
-                                 (fn [x]
-                                   (and (some? x) (string/includes? x (:content store))))
-                                 (vals (select-keys bookshop [:name :city :station :place]))))))]
-      (if (empty? visible-shops)
-        (div {:style (merge ui/center {:font-size 24, :height 400})} (<> "Nothing..."))
-        (list->
-         {:style (merge ui/row {:flex-wrap :wrap})}
-         (->> visible-shops
-              (map-indexed (fn [idx bookshop] [idx (comp-bookshop bookshop)]))))))
-    (=< nil 32)
-    (div
-     {:style ui/center}
-     (a
-      {:href "https://github.com/webcityim/bookshops", :target "_blank"}
-      (<> "Code on GitHub")))
+     {:style (merge ui/row)}
+     (div
+      {:style (merge ui/column-parted {:width 160})}
+      (div
+       {}
+       (div
+        {:style {:font-family ui/font-fancy,
+                 :font-weight 100,
+                 :font-size 32,
+                 :margin-bottom 16,
+                 :cursor :pointer},
+         :on-click (action-> :content "")}
+        (<> "Bookshops"))
+       (comp-entry "上海")
+       (comp-entry "杭州")
+       (comp-entry "西西弗")
+       (comp-entry "钟书阁")
+       (comp-entry "言几又"))
+      (div
+       {:style (merge ui/row {:margin-top 32})}
+       (a
+        {:href "https://github.com/webcityim/bookshops", :target "_blank"}
+        (<> "Code on GitHub"))))
+     (let [visible-shops (->> bookshop-list
+                              (filter
+                               (fn [bookshop]
+                                 (some
+                                  (fn [x]
+                                    (and (some? x) (string/includes? x (:content store))))
+                                  (vals
+                                   (select-keys bookshop [:name :city :station :place]))))))]
+       (if (empty? visible-shops)
+         (div
+          {:style (merge ui/flex ui/center {:font-size 24, :height 400})}
+          (<> "Nothing..."))
+         (list->
+          {:style (merge
+                   ui/flex
+                   ui/column
+                   {:height "100%", :overflow :auto, :padding-top 64, :padding-bottom 160})}
+          (->> visible-shops
+               (map-indexed (fn [idx bookshop] [idx (comp-bookshop bookshop)])))))))
     (when dev? (cursor-> :reel comp-reel states reel {})))))
