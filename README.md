@@ -4,7 +4,7 @@ Collection of bookshops
 
 > Photos I took in bookshops
 
-http://repo.tiye.me/webcityim/bookshops/
+http://books.webcity.im/
 
 ### Contribute
 
