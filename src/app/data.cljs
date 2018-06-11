@@ -259,6 +259,34 @@
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/s4TvZZFDA8EwwsuFA"}],
     :keywords [],
+    :city "上海"}
+   {:name "志达书店",
+    :place "杨浦区国权路525号",
+    :station "五角场",
+    :metro-lines [],
+    :albums [],
+    :keywords [],
+    :city "上海"}
+   {:name "衡山•和集",
+    :place "衡山坊",
+    :station "徐家汇",
+    :metro-lines [],
+    :albums [],
+    :keywords [],
+    :city "上海"}
+   {:name "思南书局",
+    :place "思南公馆",
+    :station "淮海路",
+    :metro-lines [],
+    :albums [],
+    :keywords [],
+    :city "上海"}
+   {:name "半层书店",
+    :place "虹口区哈尔滨路129号",
+    :station "海伦路",
+    :metro-lines [],
+    :albums [],
+    :keywords [],
     :city "上海"}])
 
 (def shenzhen-shops
