@@ -49,6 +49,22 @@
     :keywords [],
     :city "杭州"}])
 
+(def jinhua-shops
+  [{:name "金华书城",
+    :place "八一北街",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/WNt9f7pVhfooep1R8"}],
+    :keywords [],
+    :city "金华"}
+   {:name "购书中心",
+    :place "八一南街",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/YkVrgG9sAG5pLi5c7"}],
+    :keywords [],
+    :city "金华"}])
+
 (def shanghai-shops
   [{:name "西西弗",
     :place "月星环球港",
@@ -264,20 +280,20 @@
     :place "杨浦区国权路525号",
     :station "五角场",
     :metro-lines [],
-    :albums [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/4woPDBVpog8w6uv29"}],
     :keywords [],
     :city "上海"}
    {:name "衡山•和集",
     :place "衡山坊",
     :station "徐家汇",
-    :metro-lines [],
-    :albums [],
+    :metro-lines [1 9 11],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/hDwZeB5UwMLDstDp9"}],
     :keywords [],
     :city "上海"}
    {:name "思南书局",
     :place "思南公馆",
     :station "淮海路",
-    :metro-lines [],
+    :metro-lines [{:title "题叶", :link "https://photos.app.goo.gl/iTKtg1BBFGmtxmwq8"}],
     :albums [],
     :keywords [],
     :city "上海"}
@@ -331,4 +347,5 @@
    guangzhou-shops
    shenzhen-shops
    xiamen-shops
-   fuzhou-shops))
+   fuzhou-shops
+   jinhua-shops))
