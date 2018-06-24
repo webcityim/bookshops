@@ -303,6 +303,13 @@
     :metro-lines [],
     :albums [],
     :keywords [],
+    :city "上海"}
+   {:name "上海三联书店",
+    :place "淮海中路",
+    :station "淮海中路",
+    :metro-lines [1 13],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/W8fsW7i825ZY5xnr7"}],
+    :keywords [],
     :city "上海"}])
 
 (def shenzhen-shops
