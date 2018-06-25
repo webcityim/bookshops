@@ -8,6 +8,7 @@
 
 (def config {:storage "bookshops"})
 
-(def dev? (do ^boolean js/goog.DEBUG))
+(def dev?
+  (if (exists? js/window) (do ^boolean js/goog.DEBUG) (= "dev" (.-env (.-env js/process)))))
 
 (def store {:states {}, :content ""})
