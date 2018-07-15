@@ -47,6 +47,13 @@
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/2fVwJCHg1ZAVpFds9"}],
     :keywords [],
+    :city "杭州"}
+   {:name "晓风书店",
+    :place "北山路",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/rJu2jN9uw6yMPy1e8"}],
+    :keywords [],
     :city "杭州"}])
 
 (def jinhua-shops
@@ -309,6 +316,13 @@
     :station "淮海中路",
     :metro-lines [1 13],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/W8fsW7i825ZY5xnr7"}],
+    :keywords [],
+    :city "上海"}
+   {:name "现代书店",
+    :place "正大广场",
+    :station "陆家嘴",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/oAHjuXe1qopLcyS36"}],
     :keywords [],
     :city "上海"}])
 
