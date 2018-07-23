@@ -839,6 +839,13 @@
                    "j" {:type :leaf, :by "root", :at 1525973801156, :text "\"言几又", :id "rkERlWzRM"}
                   }
                  }
+                 "yj" {
+                  :type :expr, :by "root", :at 1525973176663, :id "BkuXJXGE7"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525973194637, :text "comp-entry", :id "B1-plbf0Mleaf"}
+                   "j" {:type :leaf, :by "root", :at 1532272422470, :text "\"诚品", :id "rkERlWzRM"}
+                  }
+                 }
                 }
                }
                "j" {
@@ -1416,6 +1423,7 @@
          "T" {:type :leaf, :by "root", :at 1525799995332, :text "concat", :id "BkgZHhU1CG"}
          "j" {:type :leaf, :by "root", :at 1525799999819, :text "shanghai-shops", :id "rkEr2LJ0z"}
          "r" {:type :leaf, :by "root", :at 1525800004144, :text "hangzhou-shops", :id "HJ9H38yCM"}
+         "t" {:type :leaf, :by "root", :at 1532272451958, :text "taipei-list", :id "rydSk7GEm"}
          "v" {:type :leaf, :by "root", :at 1525800008684, :text "suzhou-shops", :id "BkGhS2LyCz"}
          "w" {:type :leaf, :by "root", :at 1525800024788, :text "guangzhou-shops", :id "H1oL2LJRz"}
          "x" {:type :leaf, :by "root", :at 1525800018514, :text "shenzhen-shops", :id "BkfInIkRG"}
@@ -5815,6 +5823,379 @@
             :data {
              "T" {:type :leaf, :by "root", :at 1525714361824, :text ":city", :id "HJbpTWApGleaf"}
              "j" {:type :leaf, :by "root", :at 1525715013691, :text "\"苏州", :id "Bkzf6ab06M"}
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+     "taipei-list" {
+      :type :expr, :by "root", :at 1532272134278, :id "H1lAbAGMV7"
+      :data {
+       "T" {:type :leaf, :by "root", :at 1532272138028, :text "def", :id "H1ZR-CfGVX"}
+       "j" {:type :leaf, :by "root", :at 1532272134278, :text "taipei-list", :id "SJz0b0fGVm"}
+       "r" {
+        :type :expr, :by "root", :at 1532272134278, :id "Bk7R-AMM4X"
+        :data {
+         "T" {:type :leaf, :by "root", :at 1532272145931, :text "[]", :id "rkcfRMz4Q"}
+         "r" {
+          :type :expr, :by "root", :at 1525714253933, :id "Hyg6fAMMEQ"
+          :data {
+           "T" {:type :leaf, :by "root", :at 1525714257773, :text "{}", :id "HkWtUaW06M"}
+           "j" {
+            :type :expr, :by "root", :at 1525714258080, :id "BJM98a-06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714258853, :text ":name", :id "ByWqUaZRpG"}
+             "j" {:type :leaf, :by "root", :at 1532272280018, :text "\"诚品书店(松烟店)", :id "ry7iI6W06M"}
+            }
+           }
+           "r" {
+            :type :expr, :by "root", :at 1525714264389, :id "ryWlD6ZAaz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714542534, :text ":place", :id "ryWlD6ZAazleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272289802, :text "\"信义区烟厂路88号", :id "rkDwCbA6G"}
+            }
+           }
+           "v" {
+            :type :expr, :by "root", :at 1525714274688, :id "BJiwaW06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714276614, :text ":station", :id "BJiwaW06zleaf"}
+             "j" {:type :leaf, :by "root", :at 1525714886597, :text "nil", :id "r1baP6bApM"}
+            }
+           }
+           "w" {
+            :type :expr, :by "root", :at 1525714551713, :id "rJlYAZRpf"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714561548, :text ":metro-lines", :id "rJlYAZRpfleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714561859, :id "ByZcFC-0az"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714562280, :text "[]", :id "Bkg5YRZA6M"}
+              }
+             }
+            }
+           }
+           "x" {
+            :type :expr, :by "root", :at 1525714283521, :id "Bk4OabCTG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714293763, :text ":albums", :id "Bk4OabCTGleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714286572, :id "SJPda-0pM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714286959, :text "[]", :id "Byz8dp-ApG"}
+               "j" {
+                :type :expr, :by "root", :at 1525715522667, :id "Sk8yBGA6M"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1525715523327, :text "{}", :id "Hy-qSGfR6f"}
+                 "j" {
+                  :type :expr, :by "root", :at 1525715523665, :id "SJhrGzRTf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715531432, :text ":title", :id "BkMiSMfR6z"}
+                   "j" {:type :leaf, :by "root", :at 1525715534423, :text "\"题叶", :id "ryVQUMf06z"}
+                  }
+                 }
+                 "r" {
+                  :type :expr, :by "root", :at 1525715535432, :id "BJlPUfz0pf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715537327, :text ":link", :id "BJlPUfz0pfleaf"}
+                   "j" {:type :leaf, :by "root", :at 1532272265594, :text "\"https://photos.app.goo.gl/MHEMfFWYGcE7io5i9", :id "SkQFUzzR6M"}
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+           "y" {
+            :type :expr, :by "root", :at 1525714340510, :id "rJZnsp-CTz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714344336, :text ":keywords", :id "rJZnsp-CTzleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714344963, :id "B1eWnpbRpM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714345458, :text "[]", :id "HJ-3aZRaf"}
+              }
+             }
+            }
+           }
+           "yT" {
+            :type :expr, :by "root", :at 1525714360627, :id "HJbpTWApG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714361824, :text ":city", :id "HJbpTWApGleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272292346, :text "\"台北", :id "Bkzf6ab06M"}
+            }
+           }
+          }
+         }
+         "v" {
+          :type :expr, :by "root", :at 1525714253933, :id "S1ZpG0GfNX"
+          :data {
+           "T" {:type :leaf, :by "root", :at 1525714257773, :text "{}", :id "HkWtUaW06M"}
+           "j" {
+            :type :expr, :by "root", :at 1525714258080, :id "BJM98a-06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714258853, :text ":name", :id "ByWqUaZRpG"}
+             "j" {:type :leaf, :by "root", :at 1532272300637, :text "\"天珑书局", :id "ry7iI6W06M"}
+            }
+           }
+           "r" {
+            :type :expr, :by "root", :at 1525714264389, :id "ryWlD6ZAaz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714542534, :text ":place", :id "ryWlD6ZAazleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272307269, :text "\"中正区重庆南路一段107号", :id "rkDwCbA6G"}
+            }
+           }
+           "v" {
+            :type :expr, :by "root", :at 1525714274688, :id "BJiwaW06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714276614, :text ":station", :id "BJiwaW06zleaf"}
+             "j" {:type :leaf, :by "root", :at 1525714886597, :text "nil", :id "r1baP6bApM"}
+            }
+           }
+           "w" {
+            :type :expr, :by "root", :at 1525714551713, :id "rJlYAZRpf"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714561548, :text ":metro-lines", :id "rJlYAZRpfleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714561859, :id "ByZcFC-0az"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714562280, :text "[]", :id "Bkg5YRZA6M"}
+              }
+             }
+            }
+           }
+           "x" {
+            :type :expr, :by "root", :at 1525714283521, :id "Bk4OabCTG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714293763, :text ":albums", :id "Bk4OabCTGleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714286572, :id "SJPda-0pM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714286959, :text "[]", :id "Byz8dp-ApG"}
+               "j" {
+                :type :expr, :by "root", :at 1525715522667, :id "Sk8yBGA6M"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1525715523327, :text "{}", :id "Hy-qSGfR6f"}
+                 "j" {
+                  :type :expr, :by "root", :at 1525715523665, :id "SJhrGzRTf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715531432, :text ":title", :id "BkMiSMfR6z"}
+                   "j" {:type :leaf, :by "root", :at 1525715534423, :text "\"题叶", :id "ryVQUMf06z"}
+                  }
+                 }
+                 "r" {
+                  :type :expr, :by "root", :at 1525715535432, :id "BJlPUfz0pf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715537327, :text ":link", :id "BJlPUfz0pfleaf"}
+                   "j" {:type :leaf, :by "root", :at 1532272327835, :text "\"https://photos.app.goo.gl/AHat67qzFcwohbxdA", :id "SkQFUzzR6M"}
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+           "y" {
+            :type :expr, :by "root", :at 1525714340510, :id "rJZnsp-CTz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714344336, :text ":keywords", :id "rJZnsp-CTzleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714344963, :id "B1eWnpbRpM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714345458, :text "[]", :id "HJ-3aZRaf"}
+              }
+             }
+            }
+           }
+           "yT" {
+            :type :expr, :by "root", :at 1525714360627, :id "HJbpTWApG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714361824, :text ":city", :id "HJbpTWApGleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272330856, :text "\"台北", :id "Bkzf6ab06M"}
+            }
+           }
+          }
+         }
+         "x" {
+          :type :expr, :by "root", :at 1525714253933, :id "SkfmCGGEX"
+          :data {
+           "T" {:type :leaf, :by "root", :at 1525714257773, :text "{}", :id "HkWtUaW06M"}
+           "j" {
+            :type :expr, :by "root", :at 1525714258080, :id "BJM98a-06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714258853, :text ":name", :id "ByWqUaZRpG"}
+             "j" {:type :leaf, :by "root", :at 1532272346919, :text "\"诚品书店(敦南店)", :id "ry7iI6W06M"}
+            }
+           }
+           "r" {
+            :type :expr, :by "root", :at 1525714264389, :id "ryWlD6ZAaz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714542534, :text ":place", :id "ryWlD6ZAazleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272352486, :text "\"大安区敦化南路一段245号", :id "rkDwCbA6G"}
+            }
+           }
+           "v" {
+            :type :expr, :by "root", :at 1525714274688, :id "BJiwaW06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714276614, :text ":station", :id "BJiwaW06zleaf"}
+             "j" {:type :leaf, :by "root", :at 1525714886597, :text "nil", :id "r1baP6bApM"}
+            }
+           }
+           "w" {
+            :type :expr, :by "root", :at 1525714551713, :id "rJlYAZRpf"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714561548, :text ":metro-lines", :id "rJlYAZRpfleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714561859, :id "ByZcFC-0az"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714562280, :text "[]", :id "Bkg5YRZA6M"}
+              }
+             }
+            }
+           }
+           "x" {
+            :type :expr, :by "root", :at 1525714283521, :id "Bk4OabCTG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714293763, :text ":albums", :id "Bk4OabCTGleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714286572, :id "SJPda-0pM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714286959, :text "[]", :id "Byz8dp-ApG"}
+               "j" {
+                :type :expr, :by "root", :at 1525715522667, :id "Sk8yBGA6M"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1525715523327, :text "{}", :id "Hy-qSGfR6f"}
+                 "j" {
+                  :type :expr, :by "root", :at 1525715523665, :id "SJhrGzRTf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715531432, :text ":title", :id "BkMiSMfR6z"}
+                   "j" {:type :leaf, :by "root", :at 1525715534423, :text "\"题叶", :id "ryVQUMf06z"}
+                  }
+                 }
+                 "r" {
+                  :type :expr, :by "root", :at 1525715535432, :id "BJlPUfz0pf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715537327, :text ":link", :id "BJlPUfz0pfleaf"}
+                   "j" {:type :leaf, :by "root", :at 1532272370653, :text "\"https://photos.app.goo.gl/5xAQFHoFxUJNtk7R9", :id "SkQFUzzR6M"}
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+           "y" {
+            :type :expr, :by "root", :at 1525714340510, :id "rJZnsp-CTz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714344336, :text ":keywords", :id "rJZnsp-CTzleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714344963, :id "B1eWnpbRpM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714345458, :text "[]", :id "HJ-3aZRaf"}
+              }
+             }
+            }
+           }
+           "yT" {
+            :type :expr, :by "root", :at 1525714360627, :id "HJbpTWApG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714361824, :text ":city", :id "HJbpTWApGleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272374071, :text "\"台北", :id "Bkzf6ab06M"}
+            }
+           }
+          }
+         }
+         "y" {
+          :type :expr, :by "root", :at 1525714253933, :id "HyeiMyQfNm"
+          :data {
+           "T" {:type :leaf, :by "root", :at 1525714257773, :text "{}", :id "HkWtUaW06M"}
+           "j" {
+            :type :expr, :by "root", :at 1525714258080, :id "BJM98a-06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714258853, :text ":name", :id "ByWqUaZRpG"}
+             "j" {:type :leaf, :by "root", :at 1532272232797, :text "\"佚名(音像漫画杂志)", :id "ry7iI6W06M"}
+            }
+           }
+           "r" {
+            :type :expr, :by "root", :at 1525714264389, :id "ryWlD6ZAaz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714542534, :text ":place", :id "ryWlD6ZAazleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272243476, :text "\"吴兴街220巷", :id "rkDwCbA6G"}
+            }
+           }
+           "v" {
+            :type :expr, :by "root", :at 1525714274688, :id "BJiwaW06z"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714276614, :text ":station", :id "BJiwaW06zleaf"}
+             "j" {:type :leaf, :by "root", :at 1525714886597, :text "nil", :id "r1baP6bApM"}
+            }
+           }
+           "w" {
+            :type :expr, :by "root", :at 1525714551713, :id "rJlYAZRpf"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714561548, :text ":metro-lines", :id "rJlYAZRpfleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714561859, :id "ByZcFC-0az"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714562280, :text "[]", :id "Bkg5YRZA6M"}
+              }
+             }
+            }
+           }
+           "x" {
+            :type :expr, :by "root", :at 1525714283521, :id "Bk4OabCTG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714293763, :text ":albums", :id "Bk4OabCTGleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714286572, :id "SJPda-0pM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714286959, :text "[]", :id "Byz8dp-ApG"}
+               "j" {
+                :type :expr, :by "root", :at 1525715522667, :id "Sk8yBGA6M"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1525715523327, :text "{}", :id "Hy-qSGfR6f"}
+                 "j" {
+                  :type :expr, :by "root", :at 1525715523665, :id "SJhrGzRTf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715531432, :text ":title", :id "BkMiSMfR6z"}
+                   "j" {:type :leaf, :by "root", :at 1525715534423, :text "\"题叶", :id "ryVQUMf06z"}
+                  }
+                 }
+                 "r" {
+                  :type :expr, :by "root", :at 1525715535432, :id "BJlPUfz0pf"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1525715537327, :text ":link", :id "BJlPUfz0pfleaf"}
+                   "j" {:type :leaf, :by "root", :at 1532272214272, :text "\"https://photos.app.goo.gl/TTg38C54wcumdiQD8", :id "SkQFUzzR6M"}
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+           "y" {
+            :type :expr, :by "root", :at 1525714340510, :id "rJZnsp-CTz"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714344336, :text ":keywords", :id "rJZnsp-CTzleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1525714344963, :id "B1eWnpbRpM"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1525714345458, :text "[]", :id "HJ-3aZRaf"}
+              }
+             }
+            }
+           }
+           "yT" {
+            :type :expr, :by "root", :at 1525714360627, :id "HJbpTWApG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1525714361824, :text ":city", :id "HJbpTWApGleaf"}
+             "j" {:type :leaf, :by "root", :at 1532272246672, :text "\"台北", :id "Bkzf6ab06M"}
             }
            }
           }

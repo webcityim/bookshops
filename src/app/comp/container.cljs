@@ -88,7 +88,8 @@
        (comp-entry "杭州")
        (comp-entry "西西弗")
        (comp-entry "钟书阁")
-       (comp-entry "言几又"))
+       (comp-entry "言几又")
+       (comp-entry "诚品"))
       (div
        {:style (merge ui/row {:margin-top 32})}
        (a

@@ -351,6 +351,36 @@
     :keywords [],
     :city "苏州"}])
 
+(def taipei-list
+  [{:name "诚品书店(松烟店)",
+    :place "信义区烟厂路88号",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/MHEMfFWYGcE7io5i9"}],
+    :keywords [],
+    :city "台北"}
+   {:name "天珑书局",
+    :place "中正区重庆南路一段107号",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/AHat67qzFcwohbxdA"}],
+    :keywords [],
+    :city "台北"}
+   {:name "诚品书店(敦南店)",
+    :place "大安区敦化南路一段245号",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/5xAQFHoFxUJNtk7R9"}],
+    :keywords [],
+    :city "台北"}
+   {:name "佚名(音像漫画杂志)",
+    :place "吴兴街220巷",
+    :station nil,
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/TTg38C54wcumdiQD8"}],
+    :keywords [],
+    :city "台北"}])
+
 (def xiamen-shops
   [{:name "不在书店",
     :place nil,
@@ -364,6 +394,7 @@
   (concat
    shanghai-shops
    hangzhou-shops
+   taipei-list
    suzhou-shops
    guangzhou-shops
    shenzhen-shops
