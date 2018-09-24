@@ -324,6 +324,27 @@
     :metro-lines [2],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/oAHjuXe1qopLcyS36"}],
     :keywords [],
+    :city "上海"}
+   {:name "建投书店",
+    :place "公平路188号",
+    :station "大连路",
+    :metro-lines [12],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/aW5rzZvhShzqHnki6"}],
+    :keywords [],
+    :city "上海"}
+   {:name "读者书店",
+    :place "九江路230号",
+    :station "南京东路",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/QKnjUa4yL9U9gBEN8"}],
+    :keywords [],
+    :city "上海"}
+   {:name "稻城书店",
+    :place "哥伦比亚公园",
+    :station "延安西路",
+    :metro-lines [3],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/8b7FmjuboJ1qzDKA9"}],
+    :keywords [],
     :city "上海"}])
 
 (def shenzhen-shops
