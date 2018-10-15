@@ -374,9 +374,16 @@
 (def suzhou-shops
   [{:name "诚品书店",
     :place nil,
-    :station nil,
-    :metro-lines [],
+    :station "时代广场",
+    :metro-lines [1],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/duMsM6P6cPUa24is8"}],
+    :keywords [],
+    :city "苏州"}
+   {:name "钟书阁",
+    :place nil,
+    :station "星海广场",
+    :metro-lines [1],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/se9JisMVywFxYL3r6"}],
     :keywords [],
     :city "苏州"}])
 
