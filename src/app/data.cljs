@@ -293,6 +293,13 @@
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/JWqRoUb4WuX1wbRp8"}],
     :keywords [],
+    :city "上海"}
+   {:name "西西弗",
+    :place "世茂广场",
+    :station "人民广场",
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/TYMnz7dMLU4oPhBF9"}],
+    :keywords [],
     :city "上海"}])
 
 (def shanghai-yanjiyou-shops
