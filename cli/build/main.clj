@@ -15,6 +15,7 @@
   (shadow/release :client)
   (shadow/compile :page)
   (sh! "node target/page.js")
+  (sh! "cp -r entry/icons dist/")
   (sh! "cp entry/manifest.json dist/"))
 
 (defn build-local []
@@ -22,6 +23,7 @@
   (shadow/release :client)
   (shadow/compile :page)
   (sh! "prod=preview node target/page.js")
+  (sh! "cp -r entry/icons dist/")
   (sh! "cp entry/manifest.json dist/"))
 
 (defn page []
