@@ -29,3 +29,36 @@ body * {
 ::-webkit-resizer{
   background-color:transparent;
 }
+
+
+.icon-elite {
+  background-image: url("/icons/elite.jpg");
+}
+
+.icon-jifeng {
+  background-image: url("/icons/jifeng.jpg");
+}
+
+.icon-monicage {
+  background-image: url("/icons/monicage.jpg");
+}
+
+.icon-popularbookmall {
+  background-image: url("/icons/popularbookmall.jpg");
+}
+
+.icon-sisyphe {
+  background-image: url("/icons/sisyphe.jpg");
+}
+
+.icon-xinhua {
+  background-image: url("/icons/xinhua.jpg");
+}
+
+.icon-yanjiyou {
+  background-image: url("/icons/yanjiyou.png");
+}
+
+.icon-zhongshuge {
+  background-image: url("/icons/zhongshuge.jpg");
+}

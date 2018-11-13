@@ -448,3 +448,13 @@
    xiamen-shops
    fuzhou-shops
    jinhua-shops))
+
+(def quick-sites
+  [{:id "elite", :name "诚品书店"}
+   {:id "jifeng", :name "季风书园"}
+   {:id "monicage", :name "猫之天空"}
+   {:id "popularbookmall", :name "大众书局"}
+   {:id "sisyphe", :name "西西弗"}
+   {:id "xinhua", :name "新华书店"}
+   {:id "yanjiyou", :name "言几又"}
+   {:id "zhongshuge", :name "钟书阁"}])

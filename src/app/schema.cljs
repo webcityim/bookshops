@@ -11,4 +11,6 @@
 (def dev?
   (if (exists? js/window) (do ^boolean js/goog.DEBUG) (= "dev" (.-env (.-env js/process)))))
 
-(def store {:states {}, :content ""})
+(def router {:name :home, :data nil})
+
+(def store {:states {}, :router router})

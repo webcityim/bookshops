@@ -5,7 +5,9 @@
             [app.comp.container :refer [comp-container]]
             [app.schema :as schema]
             [reel.schema :as reel-schema]
-            [cljs.reader :refer [read-string]]))
+            [cljs.reader :refer [read-string]]
+            [build.util :refer [get-ip!]])
+  (:require-macros [clojure.core.strint :refer [<<]]))
 
 (def base-info
   {:title "Bookshops",
@@ -18,7 +20,7 @@
    ""
    (merge
     base-info
-    {:styles ["/entry/main.css" "http://localhost:8100/main.css"],
+    {:styles [(<< "http://~(get-ip!):8100/main.css") "/entry/main.css"],
      :scripts ["/main.js"],
      :inline-styles []})))
 
