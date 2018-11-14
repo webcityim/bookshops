@@ -132,8 +132,15 @@
    {:name "猫的天空之城",
     :place "大学路",
     :station "江湾体育场",
-    :metro-lines [],
+    :metro-lines [10],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/oUT4CiZHw2Fc5kAcA"}],
+    :keywords [],
+    :city "上海"}
+   {:name "猫的天空之城",
+    :place "新天地",
+    :station "新天地",
+    :metro-lines [10 13],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/ok8ghnUzSms1i3vj6"}],
     :keywords [],
     :city "上海"}
    {:name "上海图书馆",
@@ -450,11 +457,11 @@
    jinhua-shops))
 
 (def quick-sites
-  [{:id "elite", :name "诚品书店"}
-   {:id "jifeng", :name "季风书园"}
-   {:id "monicage", :name "猫之天空"}
-   {:id "popularbookmall", :name "大众书局"}
+  [{:id "zhongshuge", :name "钟书阁"}
    {:id "sisyphe", :name "西西弗"}
-   {:id "xinhua", :name "新华书店"}
    {:id "yanjiyou", :name "言几又"}
-   {:id "zhongshuge", :name "钟书阁"}])
+   {:id "elite", :name "诚品书店"}
+   {:id "xinhua", :name "新华书店"}
+   {:id "jifeng", :name "季风书园"}
+   {:id "monicage", :name "猫的天空之城"}
+   {:id "popularbookmall", :name "大众书局"}])

@@ -17,13 +17,15 @@
               input
               a]]
             [respo.comp.space :refer [=<]]
+            [respo.comp.inspect :refer [comp-inspect]]
             [reel.comp.reel :refer [comp-reel]]
             [respo-md.comp.md :refer [comp-md]]
             [app.schema :refer [dev?]]
             [app.data :refer [bookshop-list quick-sites]]
-            [clojure.string :as string]))
+            [clojure.string :as string])
+  (:require-macros [clojure.core.strint :refer [<<]]))
 
-(defcomp comp-cell (content) (div {:style ui/flex} (<> content)))
+(defcomp comp-cell (content) (div {:style {:margin-right 16}} (<> content)))
 
 (defcomp
  comp-bookshop
@@ -59,7 +61,7 @@
  ()
  (div
   {}
-  (<> "See home page")
+  (div {:style {:padding 16, :font-size 24, :font-family ui/font-fancy}} (<> "Bookshops"))
   (list->
    {:style {:padding 8}}
    (->> quick-sites
@@ -69,20 +71,51 @@
             (div
              {:style (merge
                       ui/center
-                      {:display :inline-flex, :width 60, :height 60, :margin 8}),
+                      {:display :inline-flex, :width 72, :height 72, :margin 8}),
               :on-click (fn [e d! m!]
                 (d! :route {:name :shop-page, :data (:name shop-info)}))}
              (div
               {:class-name (str "icon-" (:id shop-info)),
                :style {:width 40, :height 40, :background-size :contain}})
-             (<> (:name shop-info)))]))))))
+             (<> (:name shop-info) {:font-size 12}))]))))
+  (div
+   {:style {:padding 16}}
+   (button
+    {:style (merge ui/button),
+     :inner-text "Browse all",
+     :on-click (fn [e d! m!] (d! :route {:name :all, :data nil}))}))))
+
+(defcomp
+ comp-list-all
+ ()
+ (div
+  {:style (merge ui/fullscreen ui/column)}
+  (div
+   {:style (merge
+            ui/row-parted
+            {:padding 16, :border-bottom (<< "1px solid ~(hsl 0 0 90)")})}
+   (span {:inner-text "Back", :on-click (fn [e d! m!] (d! :route {:name :home}))})
+   (div {} (<> "All shops"))
+   (span {}))
+  (list->
+   {:style (merge
+            ui/flex
+            ui/column
+            {:height "100%", :overflow :auto, :padding-top 0, :padding-bottom 80})}
+   (->> bookshop-list (map-indexed (fn [idx bookshop] [idx (comp-bookshop bookshop)]))))))
 
 (defcomp
  comp-shop-page
  (shop-name)
  (div
   {:style (merge ui/flex ui/column {:height "100%"})}
-  (div {:on-click (fn [e d! m!] (d! :route {:name :home}))} (<> "Back"))
+  (div
+   {:style (merge
+            ui/row-parted
+            {:padding "16px", :border-bottom (<< "1px solid ~(hsl 0 0 90)")})}
+   (span {:on-click (fn [e d! m!] (d! :route {:name :home}))} (<> "Back"))
+   (div {} (<> shop-name))
+   (span {}))
   (let [visible-shops (->> bookshop-list
                            (filter
                             (fn [bookshop]
@@ -95,7 +128,7 @@
        {:style (merge
                 ui/flex
                 ui/column
-                {:height "100%", :overflow :auto, :padding-top 64, :padding-bottom 160})}
+                {:height "100%", :overflow :auto, :padding-top 0, :padding-bottom 80})}
        (->> visible-shops (map-indexed (fn [idx bookshop] [idx (comp-bookshop bookshop)]))))))))
 
 (defcomp
@@ -108,5 +141,7 @@
       :home (comp-home)
       nil (comp-home)
       :shop-page (comp-shop-page (:data router))
+      :all (comp-list-all)
       (div {} (<> (str "Unknown page " (pr-str router)))))
+    (when dev? (comp-inspect "Store" store {:bottom 8, :left 0}))
     (when dev? (cursor-> :reel comp-reel states reel {})))))
