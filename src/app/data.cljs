@@ -54,6 +54,20 @@
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/rJu2jN9uw6yMPy1e8"}],
     :keywords [],
+    :city "杭州"}
+   {:name "Harbook+",
+    :place "西湖银泰",
+    :station "龙翔桥",
+    :metro-lines [1],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/nQiwE9UdAZGJmdRM9"}],
+    :keywords [],
+    :city "杭州"}
+   {:name "纯真年代书吧",
+    :place "宝石山",
+    :station nil,
+    :metro-lines [1],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/ChtCCJHVCfLNVb9f8"}],
+    :keywords [],
     :city "杭州"}])
 
 (def jinhua-shops
@@ -302,10 +316,17 @@
     :keywords [],
     :city "上海"}
    {:name "西西弗",
-    :place "世茂广场",
-    :station "人民广场",
-    :metro-lines [],
+    :place "大悦城(同普路)",
+    :station "大渡河路",
+    :metro-lines [2],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/TYMnz7dMLU4oPhBF9"}],
+    :keywords [],
+    :city "上海"}
+   {:name "https://photos.app.goo.gl/Q9MeXBQmgbvz5poo8",
+    :place "南丰城",
+    :station "娄山关路",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/Q9MeXBQmgbvz5poo8"}],
     :keywords [],
     :city "上海"}])
 
@@ -336,6 +357,13 @@
     :station "中山公园",
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/h25NJyXkvi154J698"}],
+    :keywords [],
+    :city "上海"}
+   {:name "言几又",
+    :place "南丰城",
+    :station "娄山关路",
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/Qf4KoujsNZtXwn1t5"}],
     :keywords [],
     :city "上海"}])
 
