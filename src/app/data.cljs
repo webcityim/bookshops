@@ -328,6 +328,13 @@
     :metro-lines [2],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/Q9MeXBQmgbvz5poo8"}],
     :keywords [],
+    :city "上海"}
+   {:name "西西弗",
+    :place "Lu One 凯德晶萃",
+    :station "马当路",
+    :metro-lines [11 4],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/eT8cFKAjXnkQpXXy5"}],
+    :keywords [],
     :city "上海"}])
 
 (def shanghai-yanjiyou-shops

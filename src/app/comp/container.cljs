@@ -20,7 +20,7 @@
             [respo.comp.inspect :refer [comp-inspect]]
             [reel.comp.reel :refer [comp-reel]]
             [respo-md.comp.md :refer [comp-md]]
-            [app.schema :refer [dev?]]
+            [app.config :refer [dev?]]
             [app.data :refer [bookshop-list quick-sites]]
             [clojure.string :as string])
   (:require-macros [clojure.core.strint :refer [<<]]))

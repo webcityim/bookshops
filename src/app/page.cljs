@@ -6,14 +6,12 @@
             [app.schema :as schema]
             [reel.schema :as reel-schema]
             [cljs.reader :refer [read-string]]
-            [build.util :refer [get-ip!]])
+            [app.config :as config]
+            [cumulo-util.build :refer [get-ip!]])
   (:require-macros [clojure.core.strint :refer [<<]]))
 
 (def base-info
-  {:title "Bookshops",
-   :icon "http://cdn.tiye.me/logo/webcity.png",
-   :ssr nil,
-   :inline-html nil})
+  {:title (:title config/site), :icon (:icon config/site), :ssr nil, :inline-html nil})
 
 (defn dev-page []
   (make-page
@@ -21,27 +19,26 @@
    (merge
     base-info
     {:styles [(<< "http://~(get-ip!):8100/main.css") "/entry/main.css"],
-     :scripts ["/main.js"],
+     :scripts ["/client.js"],
      :inline-styles []})))
-
-(def preview? (= "preview" js/process.env.prod))
 
 (defn prod-page []
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
         assets (read-string (slurp "dist/assets.edn"))
-        cdn (if preview? "" "http://cdn.tiye.me/bookshops/")
+        cdn (if config/cdn? (:cdn-url config/site) "")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
      html-content
      (merge
       base-info
-      {:styles ["http://cdn.tiye.me/favored-fonts/main.css"],
+      {:styles [(:release-ui config/site)],
        :scripts (map #(-> % :output-name prefix-cdn) assets),
        :ssr "respo-ssr",
        :inline-styles [(slurp "./entry/main.css")]}))))
 
 (defn main! []
-  (if (= js/process.env.env "dev")
+  (println "Running mode:" (if config/dev? "dev" "release"))
+  (if config/dev?
     (spit "target/index.html" (dev-page))
     (spit "dist/index.html" (prod-page))))
