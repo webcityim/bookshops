@@ -68,6 +68,34 @@
     :metro-lines [1],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/ChtCCJHVCfLNVb9f8"}],
     :keywords [],
+    :city "杭州"}
+   {:name "西西弗",
+    :place "城西银泰城",
+    :station "三坝",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/3FJaF8LFAXyixTBi9"}],
+    :keywords [],
+    :city "杭州"}
+   {:name "晓书馆",
+    :place "良渚文化村",
+    :station "良渚",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/jejxPtqXRRq1Vxxh6"}],
+    :keywords [],
+    :city "杭州"}
+   {:name "言几又",
+    :place "西湖银泰 in77 E",
+    :station "龙翔桥",
+    :metro-lines [1],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/ZeT4SH8d5AJzGBaz9"}],
+    :keywords [],
+    :city "杭州"}
+   {:name "猫的天空之城",
+    :place "天街",
+    :station "金沙湖",
+    :metro-lines [1],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/84NRpx8mYUGicpoR6"}],
+    :keywords [],
     :city "杭州"}])
 
 (def jinhua-shops
