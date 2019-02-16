@@ -275,6 +275,20 @@
     :metro-lines [3],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/8b7FmjuboJ1qzDKA9"}],
     :keywords [],
+    :city "上海"}
+   {:name "百新书局",
+    :place "缤谷广场",
+    :station "威宁路",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/RhYQxGHLvFsrUmgp8"}],
+    :keywords [],
+    :city "上海"}
+   {:name "长宁图书馆",
+    :place "威宁路",
+    :station "威宁路",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/2GcebQT7aBK65VK68"}],
+    :keywords [],
     :city "上海"}])
 
 (def shanghai-xinhua-shops
