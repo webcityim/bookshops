@@ -235,10 +235,10 @@
     :keywords [],
     :city "上海"}
    {:name "半层书店",
-    :place "虹口区哈尔滨路129号",
+    :place "哈尔滨路",
     :station "海伦路",
-    :metro-lines [],
-    :albums [],
+    :metro-lines [4 10],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/Kh28wH21PbCd56qr5"}],
     :keywords [],
     :city "上海"}
    {:name "上海三联书店",
