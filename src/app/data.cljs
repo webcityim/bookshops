@@ -230,8 +230,8 @@
    {:name "思南书局",
     :place "思南公馆",
     :station "淮海路",
-    :metro-lines [{:title "题叶", :link "https://photos.app.goo.gl/iTKtg1BBFGmtxmwq8"}],
-    :albums [],
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/iTKtg1BBFGmtxmwq8"}],
     :keywords [],
     :city "上海"}
    {:name "半层书店",
