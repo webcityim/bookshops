@@ -289,6 +289,13 @@
     :metro-lines [2],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/2GcebQT7aBK65VK68"}],
     :keywords [],
+    :city "上海"}
+   {:name "大众书局",
+    :place "正大乐城",
+    :station "龙华中路",
+    :metro-lines [7 12],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/tWdt9wQHZZpJHZq18"}],
+    :keywords [],
     :city "上海"}])
 
 (def shanghai-xinhua-shops
@@ -450,6 +457,13 @@
     :station nil,
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/A7y28hKd93eLVRrH2"}],
+    :keywords [],
+    :city "上海"}
+   {:name "钟书阁",
+    :place "绿地缤纷城",
+    :station "龙华中路",
+    :metro-lines [7 12],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/PZDWrQ9gLEEboyk17"}],
     :keywords [],
     :city "上海"}])
 
