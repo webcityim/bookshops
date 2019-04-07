@@ -230,15 +230,15 @@
    {:name "思南书局",
     :place "思南公馆",
     :station "淮海路",
-    :metro-lines [{:title "题叶", :link "https://photos.app.goo.gl/iTKtg1BBFGmtxmwq8"}],
-    :albums [],
+    :metro-lines [],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/iTKtg1BBFGmtxmwq8"}],
     :keywords [],
     :city "上海"}
    {:name "半层书店",
-    :place "虹口区哈尔滨路129号",
+    :place "哈尔滨路",
     :station "海伦路",
-    :metro-lines [],
-    :albums [],
+    :metro-lines [4 10],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/Kh28wH21PbCd56qr5"}],
     :keywords [],
     :city "上海"}
    {:name "上海三联书店",
@@ -288,6 +288,13 @@
     :station "威宁路",
     :metro-lines [2],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/2GcebQT7aBK65VK68"}],
+    :keywords [],
+    :city "上海"}
+   {:name "大众书局",
+    :place "正大乐城",
+    :station "龙华中路",
+    :metro-lines [7 12],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/tWdt9wQHZZpJHZq18"}],
     :keywords [],
     :city "上海"}])
 
@@ -450,6 +457,13 @@
     :station nil,
     :metro-lines [],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/A7y28hKd93eLVRrH2"}],
+    :keywords [],
+    :city "上海"}
+   {:name "钟书阁",
+    :place "绿地缤纷城",
+    :station "龙华中路",
+    :metro-lines [7 12],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/PZDWrQ9gLEEboyk17"}],
     :keywords [],
     :city "上海"}])
 
