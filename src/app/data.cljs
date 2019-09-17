@@ -96,6 +96,13 @@
     :metro-lines [1],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/84NRpx8mYUGicpoR6"}],
     :keywords [],
+    :city "杭州"}
+   {:name "网易蜗牛读书馆",
+    :place "滨江区江汉路",
+    :station "滨河路",
+    :metro-lines [1],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/VmQT5oJNapB8EPiLA"}],
+    :keywords [],
     :city "杭州"}])
 
 (def jinhua-shops
