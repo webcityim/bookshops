@@ -1,14 +1,14 @@
 (
  {
   :name "大隐书局", :place "江湾体育场", :station "江湾体育场", :city "上海"
-  :metro-lines []
+  :metro-lines [10]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/wPfmaHAQPFH3Z0fv1"}
   ]
   :keywords []
  }
  {
-  :name "季风书园", :place nil, :station nil, :city "上海"
+  :name "季风书园(已关闭)", :place nil, :station nil, :city "上海"
   :metro-lines []
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/Z5ystywhWZFo5TRg2"}
@@ -16,7 +16,7 @@
   :keywords []
  }
  {
-  :name "汉源书店", :place nil, :station nil, :city "上海"
+  :name "汉源书店(已关闭)", :place nil, :station nil, :city "上海"
   :metro-lines []
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/MQ6CIW5mO8nf6rHv1"}
@@ -25,7 +25,7 @@
  }
  {
   :name "上海书城", :place "福州路", :station "南京东路", :city "上海"
-  :metro-lines []
+  :metro-lines [2 10]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/GqFNpJjhgGAtB2aC8"}
   ]
@@ -33,7 +33,7 @@
  }
  {
   :name "上海三联书店", :place "朱家角", :station "朱家角", :city "上海"
-  :metro-lines []
+  :metro-lines [17]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/mWhahaa8dqA3LJ1Y7"}
   ]
@@ -41,7 +41,7 @@
  }
  {
   :name "千彩书坊", :place "常德路", :station nil, :city "上海"
-  :metro-lines []
+  :metro-lines [2 12 13]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/GcoVTNHi5PuJM3BT7"}
   ]
@@ -49,7 +49,7 @@
  }
  {
   :name "大众书局", :place "美罗城", :station "徐家汇", :city "上海"
-  :metro-lines []
+  :metro-lines [1 9 11]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/Kk2eR1yzrtsf7YTx1"}
   ]
@@ -57,7 +57,7 @@
  }
  {
   :name "现代书店", :place "浦东嘉里城", :station "花木路", :city "上海"
-  :metro-lines []
+  :metro-lines [2]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/Jb0cESqhXuvZWRpJ3"}
   ]
@@ -81,7 +81,7 @@
  }
  {
   :name "上海图书馆", :place "上海图书馆", :station "上海图书馆", :city "上海"
-  :metro-lines []
+  :metro-lines [10]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/CESnSqpj26rfcJii2"}
   ]
@@ -89,7 +89,7 @@
  }
  {
   :name "上海书城", :place "中山公园", :station "中山公园", :city "上海"
-  :metro-lines []
+  :metro-lines [2]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/Y64gCRHbG53JZUi46"}
   ]
@@ -105,7 +105,7 @@
  }
  {
   :name "大众书局", :place "怡丰城", :station "七莘路", :city "上海"
-  :metro-lines []
+  :metro-lines [1]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/s4TvZZFDA8EwwsuFA"}
   ]
@@ -217,7 +217,7 @@
  }
  {
   :name "新华书店", :place "徐汇日月光", :station "漕宝路", :city "上海"
-  :metro-lines []
+  :metro-lines [1 12]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/CWkovDnS3PFHDNP23"}
   ]
@@ -225,7 +225,7 @@
  }
  {
   :name "新华书店", :place "南方商城", :station "莲花路", :city "上海"
-  :metro-lines []
+  :metro-lines [1]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/GaN4RNHvXpkbucxm7"}
   ]
@@ -241,7 +241,7 @@
  }
  {
   :name "新华书店", :place "港汇广场", :station "徐家汇", :city "上海"
-  :metro-lines []
+  :metro-lines [1 9 11]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/BQYSUKfoSy57FzP73"}
   ]
@@ -249,7 +249,7 @@
  }
  {
   :name "新华书店", :place "爱琴海购物公园", :station "紫藤路", :city "上海"
-  :metro-lines []
+  :metro-lines [12]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/iyGmWRXU6NoIGRSx2"}
   ]
@@ -257,7 +257,7 @@
  }
  {
   :name "钟书阁", :place "芮欧百货", :station "静安寺", :city "上海"
-  :metro-lines []
+  :metro-lines [2 7]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/f4KDRPfm3aNuAhnc6"}
   ]
@@ -265,7 +265,7 @@
  }
  {
   :name "钟书阁", :place "平高世贸中心", :station nil, :city "上海"
-  :metro-lines []
+  :metro-lines [9]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/83BknP4VftsXCpUc2"}
   ]
@@ -273,7 +273,7 @@
  }
  {
   :name "钟书阁", :place "闵行", :station "东川路", :city "上海"
-  :metro-lines []
+  :metro-lines [9]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/HC5lbHgAtxWFHJXu2"}
   ]
@@ -345,7 +345,7 @@
  }
  {
   :name "西西弗", :place "月星环球港", :station "金沙江路", :city "上海"
-  :metro-lines []
+  :metro-lines [13 3 4]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/F47oBwV40IeL0gHa2"}
   ]
@@ -353,7 +353,7 @@
  }
  {
   :name "西西弗", :place "大悦城", :station "曲阜路", :city "上海"
-  :metro-lines []
+  :metro-lines [8 12]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/LxgDGEeqgyStQyc59"}
   ]
@@ -361,7 +361,7 @@
  }
  {
   :name "西西弗", :place "七宝万科光场", :station "七宝", :city "上海"
-  :metro-lines []
+  :metro-lines [9]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/cvPhiMcDsSU8nghCA"}
   ]
@@ -369,7 +369,7 @@
  }
  {
   :name "西西弗", :place "浦东嘉里城", :station "花木路", :city "上海"
-  :metro-lines []
+  :metro-lines [2 7]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/JWqRoUb4WuX1wbRp8"}
   ]
@@ -401,7 +401,7 @@
  }
  {
   :name "钟书阁", :place "星光大道", :station "江陵路", :city "杭州"
-  :metro-lines []
+  :metro-lines [1]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/qtTP1qp3j1TGHHjA7"}
   ]
@@ -409,7 +409,7 @@
  }
  {
   :name "西西弗", :place "西湖银泰", :station "定安路", :city "杭州"
-  :metro-lines []
+  :metro-lines [1]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/SVgBG5fCRno7EZlx1"}
   ]
@@ -417,7 +417,7 @@
  }
  {
   :name "芸台书店", :place "平海路", :station "龙翔桥", :city "杭州"
-  :metro-lines []
+  :metro-lines [1]
   :albums [
    {:title "题叶", :link "https://photos.app.goo.gl/2fVwJCHg1ZAVpFds9"}
   ]
