@@ -303,6 +303,13 @@
     :metro-lines [7 12],
     :albums [{:title "题叶", :link "https://photos.app.goo.gl/tWdt9wQHZZpJHZq18"}],
     :keywords [],
+    :city "上海"}
+   {:name "朵云书院",
+    :place "上海中心",
+    :station "陆家嘴",
+    :metro-lines [2],
+    :albums [{:title "题叶", :link "https://photos.app.goo.gl/5PMb8wsfMh5pGdMf8"}],
+    :keywords [],
     :city "上海"}])
 
 (def shanghai-xinhua-shops
