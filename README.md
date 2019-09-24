@@ -2,23 +2,26 @@
 Collection of bookshops
 ----
 
-> Photos I took in bookshops
+> Photos took in bookshops.
 
 http://books.webcity.im/
 
 ### Contribute
 
-Submit your albums to me on [Issues](http://github.com/webcityim/bookshops/issues) in EDN format:
+Information of the list stored in `data/bookshops.edn`. Each item is like:
 
 ```edn
-{:name "钟书阁",
- :place "星光大道",
- :station "江陵路",
- :metro-lines [],
- :albums [{:title "题叶", :link "https://photos.app.goo.gl/qtTP1qp3j1TGHHjA7"}],
- :keywords [],
- :city "杭州"}
+ {
+  :name "钟书阁", :place "星光大道", :station "江陵路", :city "杭州"
+  :metro-lines [1]
+  :albums [
+   {:title "题叶", :link "https://photos.app.goo.gl/qtTP1qp3j1TGHHjA7"}
+  ]
+  :keywords []
+ }
 ```
+
+Add your items of bookshops and create PR.
 
 ### Develop
 
