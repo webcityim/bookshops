@@ -399,6 +399,23 @@
   ]
   :keywords []
  }
+
+ {
+  :name "西西弗", :place "晶耀前滩", :station "东方体育中心", :city "上海"
+  :metro-lines [8 11]
+  :albums [
+   {:title "题叶", :link "https://photos.app.goo.gl/qebjgZjyUAMyWbuT6"}
+  ]
+  :keywords []
+ }
+ {
+  :name "几何书店", :place "世纪汇广场", :station "世纪大道", :city "上海"
+  :metro-lines [2 4 6 9]
+  :albums [
+   {:title "题叶", :link "https://photos.app.goo.gl/AaqU9wdkT5MUsE3z7"}
+  ]
+  :keywords []
+ }
  {
   :name "钟书阁", :place "星光大道", :station "江陵路", :city "杭州"
   :metro-lines [1]
