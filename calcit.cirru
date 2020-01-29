@@ -1243,6 +1243,13 @@
                       :data $ {}
                         |T $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1569255097870) (:text |[]) (:id |3T9LFxr0h2)
                         |j $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1569255099664) (:text |read-string) (:id |49fUD5gjEw)
+                |v $ {} (:type :expr) (:by |rJG4IHzWf) (:at 1580300140957)
+                  :data $ {}
+                    |T $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1580300141250) (:text |[]) (:id |u-TNWIcONleaf)
+                    |j $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1580300144045) (:text |cirru-edn.core) (:id |_01aJqILK)
+                    |r $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1580300146209) (:text |:as) (:id |jTHwfYFe)
+                    |v $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1580300148784) (:text |cirru-edn) (:id |GFG3gEPze)
+                  :id |u-TNWIcON
         :defs $ {}
           |bookshop-list $ {} (:type :expr) (:by |root) (:at 1525714464531) (:id |B1xY7AWAaG)
             :data $ {}
@@ -1250,11 +1257,11 @@
               |j $ {} (:type :leaf) (:by |root) (:at 1525714464531) (:text |bookshop-list) (:id |BJzYXCW06z)
               |r $ {} (:type :expr) (:by |rJG4IHzWf) (:at 1569255077749) (:id |NPyWDVt1Mi)
                 :data $ {}
-                  |D $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1569255079051) (:text |read-string) (:id |Ho-N3fQ4v_)
+                  |D $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1580300133490) (:text |cirru-edn/parse) (:id |Ho-N3fQ4v_)
                   |T $ {} (:type :expr) (:by |rJG4IHzWf) (:at 1569255068066) (:id |JmlJDlWNZn)
                     :data $ {}
                       |T $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1569255072838) (:text |inline) (:id |XfUhX8ztF)
-                      |j $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1569255077150) (:text "|\"bookshops.edn") (:id |kCxs-MnYst)
+                      |j $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1580300135812) (:text "|\"bookshops.cirru") (:id |kCxs-MnYst)
           |quick-sites $ {} (:type :expr) (:by |root) (:at 1542129113288) (:id |b1rn2KnsDK)
             :data $ {}
               |T $ {} (:type :leaf) (:by |root) (:at 1542129117897) (:text |def) (:id |MWIf7sqX3-)

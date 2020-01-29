@@ -1,8 +1,10 @@
 
 (ns app.data
-  (:require [shadow.resource :refer [inline]] [cljs.reader :refer [read-string]]))
+  (:require [shadow.resource :refer [inline]]
+            [cljs.reader :refer [read-string]]
+            [cirru-edn.core :as cirru-edn]))
 
-(def bookshop-list (read-string (inline "bookshops.edn")))
+(def bookshop-list (cirru-edn/parse (inline "bookshops.cirru")))
 
 (def quick-sites
   [{:id "zhongshuge", :name "钟书阁"}
