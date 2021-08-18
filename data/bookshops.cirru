@@ -1,5 +1,5 @@
 
-list
+[]
   {} (:name "|大隐书局") (:place "|江湾体育场") (:station "|江湾体育场") (:city "|上海") (:metro-lines $ [] 10)
     :albums $ []
       {} (:title "|题叶") (:link |https://photos.app.goo.gl/wPfmaHAQPFH3Z0fv1)
