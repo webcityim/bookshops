@@ -35,11 +35,12 @@
                     :style $ merge ui/input $ {} (:width |100%)
                     :on-input $ fn (e d!)
                       d! $ schema/Action :set-query $ event-value e
-                list->
+                respo.core/keyed->
                   {} $ :style $ merge ui/expand
                     {} $ :overflow :auto
                   map-indexed filtered $ fn (idx shop)
-                    [] idx $ comp-shop shop
+                    hint-fn $ Fn Number (Map Tag String) (-> respo.schema/ChildPair)
+                    respo.core/keyed-component idx $ comp-shop shop
           :examples $ []
           :schema $ quote $ Fn String (-> respo.schema/Component)
         'comp-shop $ %{} 'CodeEntry (:doc |)
@@ -62,7 +63,7 @@
       :ns $ %{} 'NsEntry (:doc |)
         :code $ quote $ ns app.comp.container
           :require (respo-ui.core :as ui)
-            respo.core :refer $ defcomp div span input <> list-> event-value
+            respo.core :refer $ defcomp div span input <> event-value
             respo.comp.space :refer $ =<
             app.schema :as schema
             app.data :as data
