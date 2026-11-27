@@ -21,6 +21,8 @@ Add your items of bookshops and create PR.
 
 ### Develop
 
+Use Calcit and `@calcit/procs` 0.46.0 with Node 24 and Yarn 4.18.0.
+
 If you want to submit code, please read this first:
 
 * Workflow https://github.com/mvc-works/calcit-workflow
